@@ -9,6 +9,8 @@
  
 include_recipe 'sysctl'
 
+include_recipe 'oraprep_fusion::oracle_user_config'
+
 sysctl_param  'kernel.shmmax' do
    value '4294967295'
 end
@@ -30,7 +32,15 @@ yum_package "elfutils-libelf" do
   action :install
 end
 
+yum_package "elfutils-libelf-devel" do
+  action :install
+end
+
 yum_package "gcc" do
+  action :install
+end
+
+yum_package "gcc-c++" do
   action :install
 end
 
@@ -100,6 +110,15 @@ yum_package "openmotif" do
 end
 
 yum_package "openmotif" do
+  action :install
+  arch "i386"
+end
+
+yum_package "openmotif22" do
+  action :install
+end
+
+yum_package "openmotif22" do
     action :install
     arch "i386"
 end
