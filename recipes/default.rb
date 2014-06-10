@@ -9,7 +9,7 @@
  
 include_recipe 'sysctl'
 
-include_recipe 'oraprep_fusion::oracle_user_config'
+include_recipe 'oraprep_fusion::ora_user'
 
 sysctl_param  'kernel.shmmax' do
    value '4294967295'
