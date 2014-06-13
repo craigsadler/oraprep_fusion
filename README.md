@@ -20,9 +20,9 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['oraprep_fusion']['bacon']</tt></td>
+    <td><tt>['oraprep_fusion']['mango']</tt></td>
     <td>Boolean</td>
-    <td>whether to include bacon</td>
+    <td>whether to include a mango</td>
     <td><tt>true</tt></td>
   </tr>
 </table>
@@ -42,9 +42,3 @@ Just include `oraprep_fusion` in your node's `run_list`:
   ]
 }
 ```
-
-Contributing
-------------
-License and Authors
--------------------
-Authors: TODO: List authors
